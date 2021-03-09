@@ -1,6 +1,6 @@
 function Heading() {
     return (
-        <h1>Hi!</h1>
+        <h1>Dear Digital Diary</h1>
     )
 }
 
