@@ -1,0 +1,44 @@
+.headingInfoContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.diaryEntryFormContainer,
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.headerContainer {
+
+    h1 {
+        font-family: $titleFont;
+        font-size: 5rem;
+        color: $red;
+        text-shadow: -3px 3px $teal, -6px 7px white;
+    }
+    .flowerSpinner {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        justify-content: center;
+        animation: logo-spin infinite 20s linear;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+

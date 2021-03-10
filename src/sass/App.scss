@@ -1,0 +1,20 @@
+@import 'setup';
+@import 'partials';
+@import 'heading';
+@import 'form';
+
+
+html {
+    font-size: 62.5%;
+    font-family: $mainFont;
+}
+
+* {
+    background-color: pink;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
