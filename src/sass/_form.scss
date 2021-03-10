@@ -26,30 +26,17 @@
         border-radius: 45px;
         padding: 1rem;
     }
-
-    .buttons {
-        display: flex;
-    }
-
-    button {
-        margin: 3rem 1rem 0;
-        padding: 1rem 1.5rem;
-        border: 3px solid $teal;
-        border-radius: 45px;
-        background-color: $teal;
-        font-family: $titleFont;
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    button:hover {
-        background-color: $red;
-        border: 3px solid $red;
-    }
-
 }
 
-// @keyframes fadeIn {
-//     0% {opacity:0;}
-//     100% {opacity:1;}
-//     }
+::placeholder{
+    color: $red;
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    margin: 3rem 1rem 0;
+    padding: 1rem 1.5rem;
+}

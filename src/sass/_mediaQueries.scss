@@ -1,0 +1,29 @@
+.headingInfoContainer {
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
+.headerContainer {
+    @include tablet {
+        margin: 15rem 0;
+    }
+}
+
+.diaryEntryFormContainer {
+    @include tablet {
+        margin-bottom: 3rem;
+    }
+}
+
+.digitalDiary {
+    @include tablet 
+    .gifHolder {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+

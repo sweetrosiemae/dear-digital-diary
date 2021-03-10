@@ -1,6 +1,7 @@
 import './sass/App.scss';
 import firebase from './firebase';
 import axios from 'axios';
+import { Link } from 'react-scroll';
 
 import Heading from './Heading.js';
 import DiaryEntryForm from './DiaryEntryForm';
@@ -52,7 +53,9 @@ function App() {
           giphyUrl: response[0].images.fixed_height.url,
           giphyAlt: response[0].title
         })
-    })
+    }).catch (() => {
+      alert(`Oops, there's something fishy with this entry. Please try again!`);
+  })
       setTextInput("");
       setTitleInput("");
       setDateInput("");
@@ -116,13 +119,23 @@ function App() {
                   url={entry.id.giphyUrl}
                   alt={entry.id.giphyAlt}
                 />
-                <button onClick={ () => { handleClick(entry.uniqueKey) } }>Delete Entry</button>
+                <button className="deleteButton" onClick={ () => { handleClick(entry.uniqueKey) } }>Delete Entry</button>
               </div>
             )
           })
         }
-        
       </ul>
+
+      <div className="scrollToTop">
+        <Link to="headingInfoContainer" smooth={true} duration={800}>
+          <button>Back to Top</button>
+        </Link>
+      </div>
+
+      <footer>
+        <p>Created at <a href="https://www.junocollege.com">Juno College</a></p>
+      </footer>
+
     </div>
   );
 }

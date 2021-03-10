@@ -1,0 +1,18 @@
+footer {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $red;
+    padding-top: 1.5rem;
+
+    a {
+        text-decoration: none;
+        color: $red;
+        font-family: $titleFont;
+        font-size: 2rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
