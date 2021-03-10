@@ -1,0 +1,47 @@
+.digitalDiary {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    gap: 2rem;
+    text-align: center;
+
+    .diaryEntry{
+        margin-bottom: 2rem;
+        border: 2px solid $teal;
+        border-radius: 25px;
+        padding: 2rem;
+        h2{
+            margin-bottom: 0;
+            font-family: $titleFont;
+            font-size: 3.5rem;
+            color: $red;
+            text-shadow: -2px 2px $teal, -3px 3px white;
+        }
+        h3,
+        p {
+            font-family: $mainFont;
+            font-size: 1.5rem;
+        }
+    }
+    button {
+        padding: 0.5rem 1rem;
+        border: 3px solid $teal;
+        border-radius: 45px;
+        background-color: $teal;
+        font-family: $titleFont;
+        color: white;
+        font-size: 1.5rem;
+    }
+    button:hover {
+        background-color: $red;
+        border: 3px solid $red;
+    }
+    .gifHolder {
+        width: 300px;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+
+}

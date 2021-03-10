@@ -1,6 +1,6 @@
+import { Link } from 'react-scroll';
+
 function DiaryEntryForm( {submit, dateChange, date, titleChange, title, textChange, text, oneWord, wordChange}) {
-
-
     return (
         <form action="" onSubmit={submit} className="diaryEntryForm">
             <label htmlFor="dateInput">Date:</label>
@@ -42,7 +42,13 @@ function DiaryEntryForm( {submit, dateChange, date, titleChange, title, textChan
             value={oneWord} 
             onChange={wordChange}/>
             
-            <button>Save Entry</button>
+            <div className="buttons">
+                <button>Save Entry</button>
+                <Link activeClass="active" to="digitalDiary" smooth={true} offset={-70} duration={500}>
+                    <button>Open Diary</button>
+                </Link>
+            </div>
+
         </form>
     )
 }

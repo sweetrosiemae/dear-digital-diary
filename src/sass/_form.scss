@@ -27,8 +27,12 @@
         padding: 1rem;
     }
 
+    .buttons {
+        display: flex;
+    }
+
     button {
-        margin-top: 3rem;
+        margin: 3rem 1rem 0;
         padding: 1rem 1.5rem;
         border: 3px solid $teal;
         border-radius: 45px;
