@@ -77,8 +77,8 @@ function App() {
     //UPDATE STATE
     setEntryArray(entryDiary);
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
   //DELETE DIARY ENTRY
   const handleClick = (entryKey) => {
