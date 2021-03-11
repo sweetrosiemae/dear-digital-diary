@@ -1,3 +1,10 @@
+// TABLET MEDIA QUERY
+.wrapper {
+    @include tablet {
+        width: 100%;
+    }
+}
+
 .headingInfoContainer {
     @include tablet {
         flex-direction: column;
@@ -14,7 +21,18 @@
 
 .diaryEntryFormContainer {
     @include tablet {
+        width: 80%;
         margin-bottom: 3rem;
+    }
+    .dateInput,
+    .titleInput,
+    .textInput,
+    .giphyInput {
+        width: 80%;
+        text-align: center;
+        border: 3px solid $teal;
+        border-radius: 45px;
+        padding: 1rem;
     }
 }
 
@@ -22,8 +40,34 @@
     @include tablet 
     .gifHolder {
         width: 250px;
-        height: 150px;
+        height: auto;
     }
 }
+
+// PHONE MEDIA  QUERY
+
+.headerContainer {
+    @include phone {
+        margin: 5rem 0;
+
+        h1{
+            font-size: 3.5rem;
+        }
+        .flowerSpinner {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+.diaryEntry {
+    @include phone {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
 
 

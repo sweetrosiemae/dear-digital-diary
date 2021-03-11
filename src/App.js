@@ -62,20 +62,19 @@ function App() {
       setOneWordInput("");
   }
 
-
   useEffect( () => {
 
     dbRef.on('value', (data) => {
       const entryData = data.val();
       const entryDiary = [];
-      //use a for-in loop to traverse this object and push the diary entries into the empty array AKA entryDiary
+      //USE FOR IN LOOP TO PUSH ENTRIES INTO EMPTY ARRAY
       for (let entryKey in entryData) {
         entryDiary.push({
           uniqueKey: entryKey,
           id:entryData[entryKey] 
         });
       }
-    //UPDATE STATE with the value of entries created by the user
+    //UPDATE STATE
     setEntryArray(entryDiary);
     })
   }, []);
@@ -86,7 +85,7 @@ function App() {
     dbRef.child(entryKey).remove();
   }
 
-
+  // CREATE THE DIARY ENTRY FROM A FORM ENTRY
   return (
     <div className="wrapper">
         <div className="headingInfoContainer">
