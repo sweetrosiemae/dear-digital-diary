@@ -1,0 +1,533 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.headingInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.diaryEntryFormContainer,
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.headerContainer h1 {
+  font-family: "Chicle", cursive;
+  font-size: 5rem;
+  color: #ec6464;
+  text-shadow: -3px 3px #8cbbb3, -6px 7px white;
+}
+
+.headerContainer .flowerSpinner {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: logo-spin infinite 20s linear;
+          animation: logo-spin infinite 20s linear;
+}
+
+.headerContainer .flowerSpinner img {
+  height: 100%;
+}
+
+@-webkit-keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.diaryEntryForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #8cbbb3;
+  border-radius: 45px;
+  -webkit-box-shadow: -5px 3px white;
+          box-shadow: -5px 3px white;
+  padding: 3rem 1.5rem;
+}
+
+.diaryEntryForm label {
+  font-family: "Chicle", cursive;
+  font-size: 2rem;
+  color: #ec6464;
+  text-shadow: -1px 1px white;
+  padding: 1rem;
+}
+
+.diaryEntryForm .dateInput,
+.diaryEntryForm .titleInput,
+.diaryEntryForm .textInput,
+.diaryEntryForm .giphyInput {
+  width: 50%;
+  text-align: center;
+  border: 3px solid #8cbbb3;
+  border-radius: 45px;
+  padding: 1rem;
+}
+
+::-webkit-input-placeholder {
+  color: #ec6464;
+}
+
+:-ms-input-placeholder {
+  color: #ec6464;
+}
+
+::-ms-input-placeholder {
+  color: #ec6464;
+}
+
+::placeholder {
+  color: #ec6464;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button {
+  margin: 3rem 1rem 0;
+  padding: 1rem 1.5rem;
+}
+
+.digitalDiary {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(325px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  padding-left: 0;
+}
+
+.digitalDiary .diaryEntry {
+  margin-bottom: 2rem;
+  border: 2px solid #8cbbb3;
+  -webkit-box-shadow: -5px 3px white;
+          box-shadow: -5px 3px white;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.digitalDiary .diaryEntry h2 {
+  margin-bottom: 0;
+  font-family: "Chicle", cursive;
+  font-size: 3.5rem;
+  color: #ec6464;
+  text-shadow: -2px 2px #8cbbb3, -3px 3px white;
+}
+
+.digitalDiary .diaryEntry h3,
+.digitalDiary .diaryEntry p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  overflow: wrap;
+}
+
+.digitalDiary .gifHolder {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.digitalDiary .gifHolder img {
+  width: 100%;
+  border-radius: 45px;
+}
+
+.deleteButton {
+  margin: auto;
+}
+
+.scrollToTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0 2rem 0;
+}
+
+footer {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ec6464;
+  padding-top: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ec6464;
+  font-family: "Chicle", cursive;
+  font-size: 2rem;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 790px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .headingInfoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .headerContainer {
+    margin: 15rem 0;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .diaryEntryFormContainer {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}
+
+.diaryEntryFormContainer .dateInput,
+.diaryEntryFormContainer .titleInput,
+.diaryEntryFormContainer .textInput,
+.diaryEntryFormContainer .giphyInput {
+  width: 80%;
+  text-align: center;
+  border: 3px solid #8cbbb3;
+  border-radius: 45px;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 790px) {
+  .digitalDiary .gifHolder {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .headerContainer {
+    margin: 5rem 0;
+  }
+  .headerContainer h1 {
+    font-size: 3.5rem;
+  }
+  .headerContainer .flowerSpinner {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .diaryEntry h2 {
+    font-size: 2.5rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  background-color: pink;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 3px solid #8cbbb3;
+  border-radius: 45px;
+  background-color: #8cbbb3;
+  font-family: "Chicle", cursive;
+  color: white;
+  font-size: 1.5rem;
+}
+
+button:hover,
+button:focus {
+  background-color: #ec6464;
+  border: 3px solid #ec6464;
+}
+/*# sourceMappingURL=App.css.map */

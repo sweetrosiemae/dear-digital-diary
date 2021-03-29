@@ -37,11 +37,12 @@
 }
 
 .digitalDiary {
-    @include tablet 
+    @include tablet {
     .gifHolder {
         width: 250px;
         height: auto;
     }
+}
 }
 
 // PHONE MEDIA  QUERY
