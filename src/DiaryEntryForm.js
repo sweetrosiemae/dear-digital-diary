@@ -11,6 +11,7 @@ function DiaryEntryForm( {submit, dateChange, date, titleChange, title, textChan
             className="dateInput"
             id="dateInput" 
             required 
+            aria-required="true"
             onChange={dateChange} 
             value={date}/>
 
@@ -21,6 +22,7 @@ function DiaryEntryForm( {submit, dateChange, date, titleChange, title, textChan
             className="titleInput"
             id="titleInput" 
             required 
+            aria-required="true"
             onChange={titleChange} 
             value={title}/>
 
@@ -31,6 +33,7 @@ function DiaryEntryForm( {submit, dateChange, date, titleChange, title, textChan
             className="textInput"
             id="textInput" 
             required 
+            aria-required="true"
             onChange={textChange} 
             value={text}/>
 

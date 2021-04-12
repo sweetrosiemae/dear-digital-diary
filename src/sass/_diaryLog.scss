@@ -9,7 +9,6 @@
     .diaryEntry{
         margin-bottom: 2rem;
         border: 2px solid $teal;
-        box-shadow: -5px 3px white;
         border-radius: 25px;
         padding: 2rem;
         h2{
@@ -17,7 +16,7 @@
             font-family: $titleFont;
             font-size: 3.5rem;
             color: $red;
-            text-shadow: -2px 2px $teal, -3px 3px white;
+            text-shadow: -2px 2px $teal, -3px 3px rgb(244, 176, 176);
         }
         h3,
         p {

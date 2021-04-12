@@ -15,7 +15,7 @@ html {
 }
 
 * {
-    background-color: pink;
+    background-color: rgb(245, 206, 213);
 }
 
 .wrapper {
@@ -25,13 +25,13 @@ html {
 }
 
 button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     border: 3px solid $teal;
     border-radius: 45px;
     background-color: $teal;
     font-family: $titleFont;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 button:hover,
 button:focus {
